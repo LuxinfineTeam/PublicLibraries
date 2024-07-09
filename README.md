@@ -16,6 +16,9 @@ v1.2
 v1.3
 - Фиксы опечаток в коде при обработке WorldUtils#harvestBlock
 
+v1.4
+- Возможность вызывать TileMachineBase#readFromNBT и TileEnergyHandler#readFromNBT на клиенте
+
 <HR>**Изменения LuxinfineAEHooks:**<BR>
 v5.7
 - Фикс компоновки ингредиентов в кастомных шаблонах. Технически правка влияет лишь на более компактное древо автокрафта
