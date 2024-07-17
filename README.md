@@ -28,6 +28,9 @@ v1.5
 v1.6
 - Отказ от использования Unsafe#ensureClassInitialized в целях совместимости с java под MacOS
 
+v1.7
+- Больше информации при ошибках
+
 **Изменения LuxinfineAEHooks:**
 ---
 v5.7
