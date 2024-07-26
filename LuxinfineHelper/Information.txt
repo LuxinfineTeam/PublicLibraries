@@ -1,0 +1,84 @@
+====================[ Commands ]====================
+/reload_commands - перезагрузка всех команд от CommandAPI
+/reload_configs - перезагрузка всех конфигов от ConfigurationAPI
+/integrations [type] - просмотр доступных интеграций
+/version <jar_name|luxinfine|all> - дамп версий и дат сборок модов
+/help - динамический вывод списка доступных игроку команд
+    Permissions: command.helper.help
+
+====================[ Permissions ]====================
+server.full.bypass - обход лимита игроков на сервере
+commands.bypass_cooldowns - обход кулдаунов всех команд, зарегистрированных через LFHelper API
+commands.bypass_limits - обход "лимитов" всех команд, зарегистрированных через LFHelper API. Под лимитами имеются ввиду проверки кол-ва хомов на игрока, варпов и прочие лимиты, при выполнении команд
+commands.bypass_pay - обход оплаты всех платных команд, зарегистрированных через LFHelper API. Этот пермишен приоритетнее, чем атрибут на переопределение стоимости
+commands.bypass_world_limits - обход вайт/блек-листов для команд, зарегистрированных через LFHelper API
+command.CMD_PATH - разрешение на выполнение команды, добавленной через LFHelper API
+command.CMD_PATH.other - разрешение на использование стороннего игрока (не себя) в качестве аргумента команды. Например /heal [ник] - для самого себя пермишен не нужен, а на другого игрока - нужен. Притом, CMD_PATH, в данном случае, берется до аргумента с игроком
+command.CMD_PATH.offline - разрешение на использование оффлайн игрока (не себя) в качестве аргумента команды. Притом, CMD_PATH, в данном случае, берется до аргумента с игроком
+
+====================[ Attributes ]====================
+command.CMD_PATH.worlds_blacklist - список запрещённых DIM для выполнения команды, который переопределяет настройку команды в конфиге. Прописывать через запятую, например "-100,0,1". Блеклист приоритетнее вайтлиста
+command.CMD_PATH.worlds_whitelist - список разрешённых DIM для выполнения команды, который переопределяет настройку команды в конфиге. Прописывать через запятую, например "-100,0,1". Если не задано - вайтлист из конфига. Если там тоже пусто - то учитывается только блеклист
+command.CMD_PATH.cooldown - КД (в миллисекундах) на выполнение команды, переопределяет настройку команд в конфиге
+command.global_cooldown - КД (в миллисекундах) на выполнение всех команд из LFHelper API, переопределяет настройку в конфиге
+command.CMD_PATH.cost - цена за выполнение (под)команды, переопределяет настройку команд в конфиге
+
+CMD_PATH - иерархичный путь команды, формат "modid.rootCommandName.subCommandName". Например: "kits.kit.create", "commands.give", "permissions.user.setpermission"
+
+====================[ JVM ARGS ]====================
+-DLFHelper.disableDynamicFieldCreating=true - запрещает генерацию динамических классов-аксессоров (@FieldsCreator) для хуков через LaunchClassLoader#cachedClasses. Если в вашем LaunchWrapper нет этого поля - прописывать ключ не нужно, активируется сам. Когда опция активна - используется WeakHashMap для привязки "полей" к классам в качестве фолбек реализации
+-DLFHelper.hooks.debug=true - активирует отладку хуков LFHelper
+-DLFHelper.hooks.skipHookPackages=XXX - список пакетов, которые не будут обработаны через хуки и трансформеры хелпера, через запятую. Проверка идет по String#startsWith
+Например: -DLFHelper.hooks.skipHookPackages=team.luxinfine.commands.,net.minecraft.entity.
+-DLFHelperTransformersLog=true - логгирует трансформацию классов через ASM и LFHooks
+-DLFHelperIgnoreASMDeprecated=true - позволяет скрыть предупреждения об использовании устаревшего API трансформеров модами в сборке
+-DLFHelper.verifyDynamicClassLoading=true - форс-валидация классов при авто-загрузке LFHelper через @EventListener / @RegistrableObject
+-DLFHelper.hooks.mandatoryOverride=true - помечает все @Inject LFHelper hooks обязательными, независимо от mandatory свойства в их коде. Использовать только если знаете что делаете!!!
+-DLFHelper.hooks.mandatoryOverride=false - помечает все @Inject LFHelper hooks НЕ обязательными, независимо от mandatory свойства в их коде. Использовать только если знаете что делаете!!!
+-DLFHelper.ASM.SkipInvalid=true - предотвращает краш игры в случае ошибки при трансформации класса через ASM: трансформация будет просто пропущено и выведено предупреждение в логе. Использовать только при крайней необходимости!
+
+===============[ Internal Integrations ]===============
+Permissions:
+    UltraminePermissions - провайдер прав на основе Ultramine сервисов
+    Vault - провайдер прав на основе Vault плагина (Bukkit)
+    LuckPerms - провайдер прав на основе LuckPerms плагина (Bukkit)
+Economy:
+    Vault - провайдер экономики на основе Vault плагина (Bukkit)
+Regions:
+    WorldGuard - провайдер регионов на основе WorldGuard плагина (Bukkit)
+GodState:
+    Essentials - провайдер доступа к GOD на основе Essentials плагина (Bukkit)
+FlyState:
+    Vanilla - провайдер доступа к возможности полёта игроков на основе ванильной системы игры
+IgnoreState:
+    Essentials - провайдер доступа к игнор-листам игроков на основе Essentials плагина (Bukkit)
+VanishState:
+    Bukkit - провайдер доступа к статусу невидимости игрока на основе Bukkit платформы
+    UltramineVanish - провайдер доступа к статусу невидимости игрока на основе Ultramine платформы
+Punishments:
+    Vanilla - провайдер наказаний (банов) на основе ванильной системы игры
+===============[ External Integrations ]===============
+Permissions:
+    LuxinfinePermissions - провайдер от LuxinfinePermimissions мода
+Economy:
+    LuxinfineEconomy - провайдер от LuxinfineEconomy мода
+    DatabaseEconomy - провайдер от DatabaseLib мода на основе обращения в базу данных. Для использования нужно указать свойства:
+        connection (int) - ID подключения к бд
+        table (string) - имя таблицы с UUID игрока и его балансом
+        uuidColumn (string) - имя колонки с UUID игрока
+        balanceColumn (string) - имя колонки с балансом игрока (должен быть дробный тип данных)
+        minBalance (double) - (опционально) минимально возможный баланс игрока, при выполнении операций. По умолчанию 0
+        maxBalance (double) - (опционально) максимально возможный баланс игрока, при выполнении операций. По умолчанию не ограничено
+        allowCreate (boolean) - (опционально) если указано и значение TRUE - то мод будет создавать новую запись на игрока в БД, если такового еще нет. В противном случае операции для не существующего в БД игрока будут отклонены
+Regions:
+    LuxinfineRegions - провайдер от LuxinfineRegions мода
+GodState:
+    LuxinfineCommands - провайдер от LuxinfineCommands мода
+FlyState:
+    LuxinfineCommands - провайдер от LuxinfineCommands мода
+IgnoreState:
+    LuxinfineChat - провайдер от LuxinfineChat мода
+Playtime:
+    LuxinfinePlaytime - провайдер от LuxinfinePlaytime мода
+VanishState:
+    LuxinfineCommands - провайдер от LuxinfineCommands мода
