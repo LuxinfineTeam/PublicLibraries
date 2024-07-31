@@ -9,6 +9,8 @@
 Также зафиксирована ошибка `Caused by: java.lang.SecurityException: class "net.minecraftforge.common.ForgeChunkManager"'s signer information does not match signer information of other classes in the same package`,
 возникает, если в сборке есть мод hodgepodge либо archaicfix
 
+Возможна несовместимость в LiteLoader (при ручной замене текстур в наших модах, без пересборки - начинаются NPE краши в лайтлоудере)
+
 В случае возникновения проблем совместимости с этими модами - помощи с нашей стороны *НЕ БУДЕТ!!!*
 
 Для повышения совместимости рекомендуется использовать AEHooksAPI и LuxinfineHelper.
