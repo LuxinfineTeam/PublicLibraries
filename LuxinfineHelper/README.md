@@ -45,3 +45,6 @@ v1.12
 v1.13
 - Вызовы RenderTooltipEvent для GuiScreen#drawHoveringText
 - Добавление GuiUtils#drawTooltips метода
+
+v1.14
+- Фикс бага с рендером тултипов
