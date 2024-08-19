@@ -41,3 +41,7 @@ v1.11
 
 v1.12
 - Фикс NPE при раннем доступе к Playerutils#getLanguage на клиенте
+
+v1.13
+- Вызовы RenderTooltipEvent для GuiScreen#drawHoveringText
+- Добавление GuiUtils#drawTooltips метода
