@@ -71,3 +71,9 @@ v1.20
 
 v1.21
 - Более универсальная реализация JEIHooks#registerOverlayHandler: теперь не сломается, если в GTNH форке NEI что-то поменяют
+
+v1.22
+- Добавление ключа -DLFHelper.hooks.FullDisable=true (ИСПОЛЬЗОВАТЬ ТОЛЬКО В ОТЛАДОЧНЫХ ЦЕЛЯХ!!!)
+
+v1.23
+- Добавление ключа -DLFHelper.hooks.traceLoadingPackages

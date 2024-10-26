@@ -29,13 +29,15 @@ CMD_PATH - иерархичный путь команды, формат "modid.r
 -DLFHelper.disableDynamicFieldCreating=true - запрещает генерацию динамических классов-аксессоров (@FieldsCreator) для хуков через LaunchClassLoader#cachedClasses. Если в вашем LaunchWrapper нет этого поля - прописывать ключ не нужно, активируется сам. Когда опция активна - используется WeakHashMap для привязки "полей" к классам в качестве фолбек реализации
 -DLFHelper.hooks.debug=true - активирует отладку хуков LFHelper
 -DLFHelper.hooks.skipHookPackages=XXX - список пакетов, которые не будут обработаны через хуки и трансформеры хелпера, через запятую. Проверка идет по String#startsWith
-Например: -DLFHelper.hooks.skipHookPackages=team.luxinfine.commands.,net.minecraft.entity.
+    Например: -DLFHelper.hooks.skipHookPackages=team.luxinfine.commands.,net.minecraft.entity.
 -DLFHelperTransformersLog=true - логгирует трансформацию классов через ASM и LFHooks
 -DLFHelperIgnoreASMDeprecated=true - позволяет скрыть предупреждения об использовании устаревшего API трансформеров модами в сборке
 -DLFHelper.verifyDynamicClassLoading=true - форс-валидация классов при авто-загрузке LFHelper через @EventListener / @RegistrableObject
 -DLFHelper.hooks.mandatoryOverride=true - помечает все @Inject LFHelper hooks обязательными, независимо от mandatory свойства в их коде. Использовать только если знаете что делаете!!!
 -DLFHelper.hooks.mandatoryOverride=false - помечает все @Inject LFHelper hooks НЕ обязательными, независимо от mandatory свойства в их коде. Использовать только если знаете что делаете!!!
 -DLFHelper.ASM.SkipInvalid=true - предотвращает краш игры в случае ошибки при трансформации класса через ASM: трансформация будет просто пропущено и выведено предупреждение в логе. Использовать только при крайней необходимости!
+-DLFHelper.hooks.traceLoadingPackages=XXX - дамп стек трейса при загрузке классов из указанных пакетов. Может использоваться для поиска несовместимых модов [и конкретно классов] с миксинами (когда вылетает исключение "Critical problem: XXX from mod YYY target ZZZ was loaded too early"). Пакеты нужно перечислить через запятую
+    Например: -DLFHelper.hooks.traceLoadingPackages=net.minecraft.,cpw.mods.fml.
 -DLFHelper.hooks.FullDisable=true - ПОЛНОЕ отключение ВСЕХ ХУКОВ И ASM от Luxinfine модов. ИСПОЛЬЗОВАТЬ ТОЛЬКО ДЛЯ ОТЛАДКИ И КРИТИЧЕСКИХ СЛУЧАЕВ!!!!!!
 
 ===============[ Internal Integrations ]===============
