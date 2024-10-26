@@ -77,3 +77,6 @@ v1.22
 
 v1.23
 - Добавление ключа -DLFHelper.hooks.traceLoadingPackages
+
+v1.24
+- Фикс совместимости с Angelica
