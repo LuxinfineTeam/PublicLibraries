@@ -84,3 +84,6 @@ v1.24
 v1.25
 - Фикс ошибочной регистрации фейк-мира в DragonAPI
 - Удаление методов TileEnergyHandler#useEnergy(double), TileEnergyHandler#addEnergy(double). Внимание: это НЕ сломает работу модов, использующих эти методы, LFHelper создаст эти методы в рантайме. Для программистов: замените вызовы этих методов на add/useEnergy(double, false). Это сделано для избежения конфликта при имплементации IUpgradableBlock Ic2 API
+
+v1.26
+- Фикс крашей из EntityUtils#getDrops для "нестандартных" Entity
