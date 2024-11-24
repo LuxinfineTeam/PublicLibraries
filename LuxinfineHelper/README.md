@@ -87,3 +87,6 @@ v1.25
 
 v1.26
 - Фикс крашей из EntityUtils#getDrops для "нестандартных" Entity
+
+v1.27
+- Оптимизация CustomClass#matches
