@@ -96,3 +96,6 @@ v1.28
 
 v1.29
 - Фикс ошибочного ограничения I/O EU энергии для TileEnergyHandler в Integer.MAX_VALUE
+
+v1.30
+- Небольшие оптимизации приёма энергии в TileEnergyHandler
