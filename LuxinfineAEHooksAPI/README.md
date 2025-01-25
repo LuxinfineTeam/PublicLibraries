@@ -14,3 +14,7 @@ v5.10
 
 v5.11
 - Фикс совместимости с GTNH
+
+v5.12
+- Фикс краша Class not found appeng.api.util.IInterfaceViewable (API GTNH) при использовании на обычном AE2
+- Подпись билдов
