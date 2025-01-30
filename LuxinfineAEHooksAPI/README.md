@@ -18,3 +18,6 @@ v5.11
 v5.12
 - Фикс краша Class not found appeng.api.util.IInterfaceViewable (API GTNH) при использовании на обычном AE2
 - Подпись билдов
+
+v5.13
+- Дополнительные методы в IExtendedInventoryCrafting и AEConverters
