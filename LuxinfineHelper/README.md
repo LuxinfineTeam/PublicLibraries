@@ -133,3 +133,6 @@ v1.39
 v1.40
 - Поддержка игнора регистра для аргументов команд с ником игрока
 - Добавление SchedulerUtils#inMainThread
+
+v1.41
+- Фикс работы Region#canPlace Region#canBreak Region#canInteract методов для WorldGuard провайдера
