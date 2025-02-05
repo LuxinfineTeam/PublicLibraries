@@ -22,3 +22,6 @@ v5.12
 v5.13
 - Дополнительные методы в IExtendedInventoryCrafting и AEConverters
 - Фикс bad class "file: *** illegal start of class file" при попытке компиляции мода с обычным Ae2 в зависимостях (не GTNH)
+
+v5.14
+- Небольшие оптимизации redirectPushPattern
