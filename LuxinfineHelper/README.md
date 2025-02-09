@@ -136,3 +136,6 @@ v1.40
 
 v1.41
 - Фикс работы Region#canPlace Region#canBreak Region#canInteract методов для WorldGuard провайдера
+
+v1.42
+- Фикс просадки в тиках TileEnergyHandler из-за постоянной перестройки маршрутов Ic2 энергосетей, когда ядро часто спамит ChunkUnloadEvent
