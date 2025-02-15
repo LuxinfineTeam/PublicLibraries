@@ -25,3 +25,12 @@ v5.13
 
 v5.14
 - Небольшие оптимизации redirectPushPattern
+
+v5.15
+- Небольшие оптимизации IO операций в SingleMEStorage
+
+v5.16
+- Учет EXTRACT/INJECT пермишенов терминала безопасности при работе SingeMEStorage / CustomMEStorage
+
+v5.17
+- Механизм защиты от зацикливания из сети в саму себя для SingeMEStorage / CustomMEStorage как в оригинальном AE2
