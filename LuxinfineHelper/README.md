@@ -145,3 +145,6 @@ v1.43
 
 v1.44
 - Оптимизации имплементации WorldGuard провайдера
+
+v1.45
+- Фикс возможных NPE EntityPlayerMP#setData (UM)
