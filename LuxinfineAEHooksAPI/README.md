@@ -34,3 +34,6 @@ v5.16
 
 v5.17
 - Механизм защиты от зацикливания из сети в саму себя для SingeMEStorage / CustomMEStorage как в оригинальном AE2
+
+v5.18
+- Фикс совместимости с GTNH версией WirelessCrafingTerminal мода
