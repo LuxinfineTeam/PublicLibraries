@@ -204,3 +204,6 @@ v1.62
 v1.63
 - Фикс работы хуков в DEV версии
 - Фикс возможных потерь данных при использовании IPlayer на Ultramine ядре
+
+v1.64
+- Добавление RegistrableObject.ANY_ENERGY_MOD для @RegistrableObject
