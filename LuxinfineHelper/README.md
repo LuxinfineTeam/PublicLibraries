@@ -207,3 +207,7 @@ v1.63
 
 v1.64
 - Добавление RegistrableObject.ANY_ENERGY_MOD для @RegistrableObject
+
+v1.65
+- Ускорение проверок canBreak canPlace для WG интеграции Regions
+- Фикс учёта КД при использовании LogUtils#log с указанием КД на вызов
