@@ -220,3 +220,6 @@ v1.67
 
 v1.68
 - Фикс краша при отсутствии CommandHandler#commandSet поля (Для нестандартных ядер)
+
+v1.69
+- Проверки World#isBlockExists в WorldUtils#get*Safe() методах на Bukkit платформах (Бакит игнорирует стандартный api forge, от чего возникали краши)
