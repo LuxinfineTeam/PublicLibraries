@@ -211,3 +211,6 @@ v1.64
 v1.65
 - Ускорение проверок canBreak canPlace для WG интеграции Regions
 - Фикс учёта КД при использовании LogUtils#log с указанием КД на вызов
+
+v1.66
+- Проверки World#isBlockExists в WorldUtils#get*Safe() методах на Bukkit платформах (Бакит игнорирует стандартный api forge, от чего возникали краши)
