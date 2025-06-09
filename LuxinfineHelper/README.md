@@ -229,3 +229,6 @@ v1.70
 
 v1.71
 - Фикс дюпа при ItemUtils#insertItem в инвентарь игрока
+
+v1.72
+- Фикс "java.lang.ClassFormatError: Incompatible magic value * in class file <unknown>" при инжекте обфнутых классов в Bukkit-плагины
