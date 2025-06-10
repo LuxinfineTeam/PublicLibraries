@@ -232,3 +232,6 @@ v1.71
 
 v1.72
 - Фикс "java.lang.ClassFormatError: Incompatible magic value * in class file <unknown>" при инжекте обфнутых классов в Bukkit-плагины
+
+v1.73
+- Поддержка Location, ChunkLocation, Cuboid, OwnedTile (частично), WorldUtils (частично) на client части мода
