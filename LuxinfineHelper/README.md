@@ -235,3 +235,6 @@ v1.72
 
 v1.73
 - Поддержка Location, ChunkLocation, Cuboid, OwnedTile (частично), WorldUtils (частично) на client части мода
+
+v1.74
+- Прекращение поддержки устаревшего нестабильного API в IPlayer интерфейсе (Break-change)
