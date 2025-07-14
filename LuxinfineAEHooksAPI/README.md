@@ -63,3 +63,6 @@ v6.1
 
 v6.2
 - Фикс генерации крашрепорта при ошибке в обработке крафта механизмом-крафтером (ошибок программистов)
+
+v6.3
+- Добавление API-методов IExtendedCraftingDevice#consumeCoProcessorPerRecipe и ICraftingDevice#consumeCoProcessorPerRecipe для ручного управления расходом сопроцессоров
