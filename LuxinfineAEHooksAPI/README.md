@@ -66,3 +66,6 @@ v6.2
 
 v6.3
 - Добавление API-методов IExtendedCraftingDevice#consumeCoProcessorPerRecipe и ICraftingDevice#consumeCoProcessorPerRecipe для ручного управления расходом сопроцессоров
+
+v6.4
+- Фикс зависания автокрафта при его завершении, если механизм через context.addPendingItem() возвращает IAEItemStack с лишними тегами (например craftable)
