@@ -250,3 +250,6 @@ v1.77
 
 v1.78
 - Фикс краша при использовании @EventListener над классами с @SideOnly
+
+v1.79
+- Фикс Region#isVirtual на WorldGuard провайдере
