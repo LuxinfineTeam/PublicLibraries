@@ -253,3 +253,6 @@ v1.78
 
 v1.79
 - Фикс Region#isVirtual на WorldGuard провайдере
+
+v1.80
+- Фикс NoClassDefFoundError при вызове Region#getShape и Region#getPoints для WorldGuard интеграции
