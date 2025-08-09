@@ -256,3 +256,6 @@ v1.79
 
 v1.80
 - Фикс NoClassDefFoundError при вызове Region#getShape и Region#getPoints для WorldGuard интеграции
+
+v1.81
+- Инициализация Bukkit интеграций в более поздней стадии загрузки сервера
