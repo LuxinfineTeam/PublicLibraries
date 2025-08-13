@@ -262,3 +262,7 @@ v1.81
 
 v1.82
 - Добавление ServerPingEvent
+
+v1.83
+- Поддержка *.png.mcmeta анимаций для моделей ICustomRendererTile
+- Фикс NPE краша на кастом сборках UltramineCore при регистрации/перезагрузке команд LFHelper Commands API
