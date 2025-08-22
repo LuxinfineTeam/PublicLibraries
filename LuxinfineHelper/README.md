@@ -266,3 +266,6 @@ v1.82
 v1.83
 - Поддержка *.png.mcmeta анимаций для моделей ICustomRendererTile
 - Фикс NPE краша на кастом сборках UltramineCore при регистрации/перезагрузке команд LFHelper Commands API
+
+v1.84
+- Фикс краша ServerUtils#getTPS без установленного spark на сервере
