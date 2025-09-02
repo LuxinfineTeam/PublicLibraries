@@ -272,3 +272,6 @@ v1.84
 
 v1.85
 - Поддержка WorldEdit интеграции для серверов, где он установлен МОДОМ, а не плагином 
+
+v1.86
+- Добавление методов NumberUtils#formatInterval, RandomUtils#checkChance и Inventory#getFirstNotEmptySlot, Inventory#getFirstEmptySlot
