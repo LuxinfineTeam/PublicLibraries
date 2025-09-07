@@ -275,3 +275,10 @@ v1.85
 
 v1.86
 - Добавление методов NumberUtils#formatInterval, RandomUtils#checkChance и Inventory#getFirstNotEmptySlot, Inventory#getFirstEmptySlot
+
+v1.87
+- Небольшая оптимизация рендера кастомных тайлов
+
+v1.88
+- Фикс поддержки WorldEdit интеграции на Bukkit платформах
+- Фикс пермишена для /reload_commands команды на Bukkit платформах
