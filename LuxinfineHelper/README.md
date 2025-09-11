@@ -282,3 +282,8 @@ v1.87
 v1.88
 - Фикс поддержки WorldEdit интеграции на Bukkit платформах
 - Фикс пермишена для /reload_commands команды на Bukkit платформах
+
+v1.89
+- Фикс встроенной команды /help
+- Добавление DefaultCommandArguments#worlds
+- Рефакторинг
