@@ -321,3 +321,6 @@ v1.2.5
 
 v1.2.6
 - Фикс работы Cuboid#iterate методов (Не затрагивало блок на y = 0, опечатка при forceChunkLoad = true)
+
+v1.2.7
+- Удаление из исходного кода методов TileEnergyHandler#useEnergy(double) и TileEnergyHandler#addEnergy(double). Они создавали конфликт с интерфейсом IUpgradableBlock из IC2 API. Моды, использующие эти методы будут по прежнему работать в рантайме (Временная совместимость)
