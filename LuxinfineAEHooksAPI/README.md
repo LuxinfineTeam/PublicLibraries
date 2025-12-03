@@ -75,3 +75,6 @@ v6.5
 
 v6.6
 - Оптимизация регистрации крафтеров в GTNH CraftingCPUCluster#providers
+
+v6.7
+- Оптимизация методов возвращаемого враппера MECraftingHooks#getActiveCraftingTasks
