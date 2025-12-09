@@ -78,3 +78,6 @@ v6.6
 
 v6.7
 - Оптимизация методов возвращаемого враппера MECraftingHooks#getActiveCraftingTasks
+
+v6.8
+- Добавление метода AEGrids#getMachinesFast для замены IGrid#getMachines с поддержкой патча быстрого получения машин в сети от гейма для AE2
