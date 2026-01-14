@@ -1,25 +1,18 @@
-# Очень важная информация:
-Наши моды/фиксы могут быть НЕ совместимы с кастомными модами, особенно, содержащими хуки/ASM/перебор рефлексии...
-Например, GTNH форки модов, retrofuturabootstrap (аналог LaunchWrapper от GTNH), TMI Integration,
-кастомные разработки от других авторов и т.д.
-
-Также, сюда относятся обычные моды, которые "в корень" переписаны/изменены сигнатуры открытых методов/полей/классов,
-в т.ч. кастомные ядра майнкрафта (с HardEngine наблюдались проблемы вроде), кастомные билды клиента.
-
-Возможна несовместимость с LiteLoader (если вы вручную, без пересборки, замените ассеты в наших модах - по какой-то причине может быть NPE краш в лайтлоудере)
-
-Также зафиксирована ошибка `Caused by: java.lang.SecurityException: class "net.minecraftforge.common.ForgeChunkManager"'s signer information does not match signer information of other classes in the same package`,
-возникает, если в сборке есть мод hodgepodge либо archaicfix.
-
-В случае возникновения проблем совместимости с этими модами - помощи с нашей стороны **НЕ БУДЕТ!!!**
+# Важная информация:
+Наши моды/фиксы могут быть НЕ совместимы с кастомными модами, особенно, содержащими хуки/ASM/перебор рефлексии. Также, сюда относятся обычные моды, которые "в корень" переписаны или изменены сигнатуры открытых методов/полей/классов. Например, некоторые GTNH моды, TMI Integration, HardEngine, кастомные разработки от других авторов и т.д.
 
 Для повышения совместимости рекомендуется использовать AEHooksAPI и LuxinfineHelper.
 
-При покупке/обновлении наших новых модов - может потребоваться обновление LuxinfineHelper. Если при его обновлении начались ошибки по типу ClassNotFoundException / NoSuchMethodError / NoSuchFieldError - то, скорее всего, у вас в сборке стоят моды, написанные под очень старую версию LuxinfineHelper, и поддержка устаревшего API прекращена - в этом случае вам нужно задуматься об обновлении наших модов или откате новых модов под более старые версии LFHelper. **Мы довнгрейдом наших модов под старое API LFHelper НЕ занимаемся, по этому либо обновлять старые моды, либо не использовать новый LuxinfineHelper и моды к нему!**
+# Репозитории
+1. [EventHelper](https://github.com/LuxinfineTeam/PublicLibraries/tree/main/EventHelper) - улучшение и некоторые доработки бесплатной версии мода от GameForEA, требуемые нашими фиксами модов
+2. [JarSplitterAPI](https://github.com/LuxinfineTeam/PublicLibraries/tree/main/JarSplitterAPI) - апи для компиляции модов с использование JarSplitter
+3. [LuxinfineAEHooksAPI](https://github.com/LuxinfineTeam/PublicLibraries/tree/main/LuxinfineAEHooksAPI) - библиотека с множеством утилитарных методов и классов для AppliedEnergistics2. Требуется для LuxinfineContents и некоторых других подобных модов. Имеется dev версия, можно использовать для любых ваших модов.
+4. [LuxinfineHelper](https://github.com/LuxinfineTeam/PublicLibraries/tree/main/LuxinfineHelper) - мод-ядро, требующееся для всех наших модов. Содержит множество утилит для значительного упрощения разработки модов. Имеется dev версия, можно использовать для любых ваших модов.
+5. [RetroFuturaBootstrap](https://github.com/LuxinfineTeam/PublicLibraries/tree/main/RetroFuturaBootstrap-FIXED) - фикс библиотеки от GTNH для работы LuxinfineHelper и наших модов с поддержкой GravitLauncher
 
-Наши моды протестированы в условиях работы нашей техно-магической сборки (Luxinfine, сервер Infinity). За работоспособность модов с модами,
-которых нет в этой сборке мы гарантировать ничего не можем. Уточняйте эту информацию у тех проектов, кто уже пользуется нашими модами и имеет
-те моды, которых нет у нас.
-
----
-Описания нет, но оно обязательно будет, с примерами реализации апишек и прочем. Ожидайте.
+# Документация
+### LuxinfineHelper
+1. [Luxinfine Hooks API](https://github.com/LuxinfineTeam/PublicLibraries/blob/main/LuxinfineHelper/dosc/hooks.md)
+2. Luxinfine Configs API
+2. Luxinfine Events API
+4. Luxinfine Utils
