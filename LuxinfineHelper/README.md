@@ -370,3 +370,9 @@ v1.3.8
 
 v1.3.9
 - Фикс в ItemUtils#extractItems с передачей null стака в ISidedInventory#canExtractItem
+
+v1.3.10
+- Небольшие улучшения интернал кода ItemUtils 
+- Оптимизация TileEnergyHandler: если в методе setEnergy энергия не изменилась, то тайл не будет помечен для сохранения на диск
+- Добавление фаз запуска для IASMTransformer: до хуков (IASMTransformer.Phase.BEFORE_HOOKS), после хуков (IASMTransformer.Phase.AFTER_HOOKS), после всего (IASMTransformer.Phase.AFTER_ALL), включая фасткрафт, миксины и прочие моды, которые используют грязные хаки для регистрации своих трансформеров
+- Регистрация SchedulerUtils в шине событий на этапе FMLConstructionEvent вместо static блока для фикса ошибки в шине с невозможностью определения мода
