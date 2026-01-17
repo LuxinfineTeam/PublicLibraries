@@ -376,3 +376,6 @@ v1.3.10
 - Оптимизация TileEnergyHandler: если в методе setEnergy энергия не изменилась, то тайл не будет помечен для сохранения на диск
 - Добавление фаз запуска для IASMTransformer: до хуков (IASMTransformer.Phase.BEFORE_HOOKS), после хуков (IASMTransformer.Phase.AFTER_HOOKS), после всего (IASMTransformer.Phase.AFTER_ALL), включая фасткрафт, миксины и прочие моды, которые используют грязные хаки для регистрации своих трансформеров
 - Регистрация SchedulerUtils в шине событий на этапе FMLConstructionEvent вместо static блока для фикса ошибки в шине с невозможностью определения мода
+
+v1.3.11
+- Фиксы работы твиков с java25
