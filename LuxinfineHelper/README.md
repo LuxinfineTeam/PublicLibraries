@@ -379,3 +379,4 @@ v1.3.10
 
 v1.3.11
 - Фиксы работы твиков с java25
+- Обфускация LuxinfineHelperASM класса и полный отказ от поддержки LuxinfineHelperASM#registerTransformer
