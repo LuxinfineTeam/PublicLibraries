@@ -380,3 +380,6 @@ v1.3.10
 v1.3.11
 - Фиксы работы твиков с java25
 - Обфускация LuxinfineHelperASM класса и полный отказ от поддержки LuxinfineHelperASM#registerTransformer
+
+v1.3.12
+- Добавление параметров requiredTransformers & blacklistedTransformers для аннотации @Inject
