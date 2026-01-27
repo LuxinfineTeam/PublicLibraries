@@ -383,3 +383,6 @@ v1.3.11
 
 v1.3.12
 - Добавление параметров requiredTransformers & blacklistedTransformers для аннотации @Inject
+
+v1.3.13
+- Поддержка перевода предметов, которые регают язык в обход апи игры для ItemUtils#getLocalizedName
