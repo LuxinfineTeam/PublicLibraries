@@ -390,3 +390,8 @@ v1.3.13
 v1.4.0
 - Добавление дополнительных методов в API Regions
 - Поддержка фейк-игроков с именами навроде \[botania\] в WorldGuard приватах при работе can***() методов в API Regions
+- Добавление EventListener#ANY_ENERGY_MOD для возможности задать требование мода с энергией для регистрации ивентов
+- Оптимизации BlockMachineBase#getTileRotation
+- Добавление package-info c @API для модуля хуков, ивентов и команд
+- Закрытие (обфускация) главного класса LuxinfineHelper и некоторых других
+- Удаление неиспользуемого утил класса ml.luxinfine.helper.tiles.TileNeighborsManager
