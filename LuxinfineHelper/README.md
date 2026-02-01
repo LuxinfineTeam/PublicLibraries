@@ -395,3 +395,6 @@ v1.4.0
 - Добавление package-info c @API для модуля хуков, ивентов и команд
 - Закрытие (обфускация) главного класса LuxinfineHelper и некоторых других
 - Удаление неиспользуемого утил класса ml.luxinfine.helper.tiles.TileNeighborsManager
+
+v1.4.1
+- Добавление метода Cuboid#isIntersectsWith
