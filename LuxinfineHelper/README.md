@@ -398,3 +398,8 @@ v1.4.0
 
 v1.4.1
 - Добавление метода Cuboid#isIntersectsWith
+
+v1.4.2
+- Добавление методов Cuboid#isIntersectsWith(Cuboid) и TeleportUtils#setPosition(EntityLocation)
+- Добавление парсера Location с адекватным отображением координат в ConfigAPI
+- Фикс критической ошибки в PlayerUtils#kick, из-за которой не выполнялся правильный выход игрока с сервера
