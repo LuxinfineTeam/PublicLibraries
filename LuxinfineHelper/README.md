@@ -407,3 +407,5 @@ v1.4.2
 v1.5.0
 - Изменение API ServerPingEvent. Добавлены getOnlinePlayers & setOnlinePlayers методы
 - При пинге сервера теперь кол-во онлайна НЕ совпадает с кол-вом игроков в списке ServerPingEvent#getPlayers. Вместо него будет возвращен ServerPingEvent#getOnlinePlayers
+- Отключение ServerPingEvent больше невозможно в конфиге
+- ServerPingEvent больше не лимитит кол-во игроков до 12
