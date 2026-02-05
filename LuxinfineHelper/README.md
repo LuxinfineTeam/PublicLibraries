@@ -403,3 +403,7 @@ v1.4.2
 - Добавление методов Cuboid#isIntersectsWith(Cuboid) и TeleportUtils#setPosition(EntityLocation)
 - Добавление парсера Location с адекватным отображением координат в ConfigAPI
 - Фикс критической ошибки в PlayerUtils#kick, из-за которой не выполнялся правильный выход игрока с сервера
+
+v1.5.0
+- Изменение API ServerPingEvent. Добавлены getOnlinePlayers & setOnlinePlayers методы
+- При пинге сервера теперь кол-во онлайна НЕ совпадает с кол-вом игроков в списке ServerPingEvent#getPlayers. Вместо него будет возвращен ServerPingEvent#getOnlinePlayers
