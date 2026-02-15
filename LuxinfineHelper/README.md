@@ -416,3 +416,6 @@ v1.5.1
 v1.5.2
 - Добавление метода BaseSlot#setHitItem(Supplier<ItemStack>)
 - Фиксы IllegalAccessError при генерации аксессоров к приватным полям/методам/конструкторам
+
+v1.5.3
+- Фикс NPE в BaseSlot после правки в версии v1.5.2
