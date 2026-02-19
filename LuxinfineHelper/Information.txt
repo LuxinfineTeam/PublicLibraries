@@ -7,7 +7,6 @@
     Permissions: command.helper.help
 
 ====================[ Permissions ]====================
-server.full.bypass - обход лимита игроков на сервере
 commands.bypass_cooldowns - обход кулдаунов всех команд, зарегистрированных через LFHelper API
 commands.bypass_limits - обход "лимитов" всех команд, зарегистрированных через LFHelper API. Под лимитами имеются ввиду проверки кол-ва хомов на игрока, варпов и прочие лимиты, при выполнении команд
 commands.bypass_pay - обход оплаты всех платных команд, зарегистрированных через LFHelper API. Этот пермишен приоритетнее, чем атрибут на переопределение стоимости
@@ -62,6 +61,9 @@ VanishState:
     UltramineVanish - провайдер доступа к статусу невидимости игрока на основе Ultramine платформы
 Punishments:
     Vanilla - провайдер наказаний (банов) на основе ванильной системы игры
+TPS:
+    Vanilla - провайдер тпс на основе рассчета тиков сервера
+	Spark - провайдер тпс на основе Forge/Bukkit spark API
 ===============[ External Integrations ]===============
 Permissions:
     LuxinfinePermissions - провайдер от LuxinfinePermimissions мода
