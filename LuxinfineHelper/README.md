@@ -443,3 +443,6 @@ v1.6.5
 
 v1.6.6
 - Небольшая оптимизация при сортировке ICustomRendererTile
+
+1.6.7
+- Поддержка ITooltipLineHandler из CLL при транслировании RenderTooltipEvent. Фиксит поломанный рендер тултипов с последними версиями NEI от GTNH
