@@ -444,5 +444,8 @@ v1.6.5
 v1.6.6
 - Небольшая оптимизация при сортировке ICustomRendererTile
 
-1.6.7
+v1.6.7
 - Поддержка ITooltipLineHandler из CCL при транслировании RenderTooltipEvent. Фиксит поломанный рендер тултипов с последними версиями NEI от GTNH
+
+v1.7.7
+- Поддержка нескольких классов в одном хуке при помощи HooksContainer#targetClasses и HooksContainer#targetClassesRef
