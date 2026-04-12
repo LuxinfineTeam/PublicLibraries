@@ -449,3 +449,6 @@ v1.6.7
 
 v1.7.7
 - Поддержка нескольких классов в одном хуке при помощи HooksContainer#targetClasses и HooksContainer#targetClassesRef
+
+v1.7.8
+- Фикс некорректной отрисовки айтемов с мультипаз рендерингом в hintItem в слотах
