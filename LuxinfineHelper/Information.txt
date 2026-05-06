@@ -64,6 +64,8 @@ Punishments:
 TPS:
     Vanilla - провайдер тпс на основе рассчета тиков сервера
 	Spark - провайдер тпс на основе Forge/Bukkit spark API
+Lang:
+    LFHelper - провайдер языка на основе LFHelper
 ===============[ External Integrations ]===============
 Permissions:
     LuxinfinePermissions - провайдер от LuxinfinePermimissions мода
