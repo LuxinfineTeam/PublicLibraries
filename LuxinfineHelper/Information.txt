@@ -91,3 +91,5 @@ Playtime:
     LuxinfinePlaytime - провайдер от LuxinfinePlaytime мода
 VanishState:
     LuxinfineCommands - провайдер от LuxinfineCommands мода
+PlayerSelection:
+	LuxinfinePrivates - провайдер от LuxinfineRegions мода
