@@ -480,3 +480,6 @@ v1.9.2
 
 v1.9.3
 - Поддержка циклической смены выходных предметов для JEIHandler
+
+v1.9.4
+- Добавление ICEnergyNet#getEnergyGrid API
