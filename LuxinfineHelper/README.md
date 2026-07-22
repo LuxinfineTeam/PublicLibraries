@@ -483,3 +483,6 @@ v1.9.3
 
 v1.9.4
 - Добавление ICEnergyNet#getEnergyGrid API
+
+v1.9.5
+- Возможность отключить внутреннюю IC2 энергосеть LFHelper через JVM аргумент `-DLFHelper.IC2EnergySystem.Disabled=true`. ВНИМАНИЕ: Используйте это только в крайнем случае и если в сборке НЕТ модов, использующих апи энергии из LFHelper
