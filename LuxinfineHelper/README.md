@@ -512,3 +512,6 @@ v2.1.0
 
 v2.1.1
 - Поддержка работы мода с включенной опцией enablePacketLoginPatch без клиент части мода
+
+v2.1.2
+- Добавление WorldGenSource для BlockSetEvent
