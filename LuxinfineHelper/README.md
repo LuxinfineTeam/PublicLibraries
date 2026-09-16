@@ -515,3 +515,9 @@ v2.1.1
 
 v2.1.2
 - Добавление WorldGenSource для BlockSetEvent
+
+v2.1.3
+- Фикс поломки PlayerMoveEvent на Bukkit платформах
+
+v2.1.4
+- Фикс крашей при работе j8 билдов на клиенте/сервере с Java8
