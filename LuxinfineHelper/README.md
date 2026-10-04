@@ -521,3 +521,6 @@ v2.1.3
 
 v2.1.4
 - Фикс крашей при работе j8 билдов на клиенте/сервере с Java8
+
+v2.1.5
+- Добавление ICommandArgument#getAdditionalPermissionNodes для получения дополнительных прав команды, например, для other/offline доступа к игроку. Требуется для LuxinfinePermissions. 
