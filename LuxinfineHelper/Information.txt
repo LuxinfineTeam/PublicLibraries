@@ -38,6 +38,7 @@ CMD_PATH - иерархичный путь команды, формат "modid.r
 -DLFHelper.hooks.traceLoadingPackages=XXX - дамп стек трейса при загрузке классов из указанных пакетов. Может использоваться для поиска несовместимых модов [и конкретно классов] с миксинами (когда вылетает исключение "Critical problem: XXX from mod YYY target ZZZ was loaded too early"). Пакеты нужно перечислить через запятую
     Например: -DLFHelper.hooks.traceLoadingPackages=net.minecraft.,cpw.mods.fml.
 -DLFHelper.hooks.FullDisable=true - ПОЛНОЕ отключение ВСЕХ ХУКОВ И ASM от Luxinfine модов. ИСПОЛЬЗОВАТЬ ТОЛЬКО ДЛЯ ОТЛАДКИ И КРИТИЧЕСКИХ СЛУЧАЕВ!!!!!!
+-DLFHooksScanCache=true - включение кеширования хуков, асм и некоторого другого, что нужно найти в jar модов
 
 ===============[ Internal Integrations ]===============
 Permissions:
